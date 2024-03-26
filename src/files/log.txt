@@ -1,0 +1,5 @@
+2024-03-26 23:05:23 | Host: localhost | path: <<GET />> | Errors: <<>> | User: Guest | Browser: Chrome | OS: Windows | Connection Time:  | IP Address: ::1 
+2024-03-26 23:05:28 | Host: localhost | path: <<GET /equipage>> | Errors: <<>> | User: Guest | Browser: Chrome | OS: Windows | Connection Time:  | IP Address: ::1 
+2024-03-26 23:05:30 | Host: localhost | path: <<GET /arcs>> | Errors: <<>> | User: Guest | Browser: Chrome | OS: Windows | Connection Time:  | IP Address: ::1 
+2024-03-26 23:05:31 | Host: localhost | path: <<GET /primes>> | Errors: <<>> | User: Guest | Browser: Chrome | OS: Windows | Connection Time:  | IP Address: ::1 
+2024-03-26 23:05:32 | Host: localhost | path: <<GET />> | Errors: <<>> | User: Guest | Browser: Chrome | OS: Windows | Connection Time:  | IP Address: ::1 

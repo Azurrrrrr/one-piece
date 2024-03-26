@@ -1,0 +1,109 @@
+@import "./header.css";
+@import "./flash.css";
+@import "./footer.css";
+
+*, ::after, ::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #101010;
+    --primary-contrast-color: #fff;
+
+    --secondary-color: #c4b810;
+    --secondary-contrast-color: black;
+    
+    --primary-accent-color: #B26A00;
+    --secondary-accent-color: #3F7DA5;
+    
+    --shadow-color: rgb(0,0,0, .25);
+    
+    --header-height: 5rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--primary-contrast-color);
+    font-family: system-ui, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main {
+    display: grid;
+}
+
+main > section {
+    padding: calc(var(--header-height) + 1.5rem) 3vw;
+    scroll-margin: var(--header-height);
+    display: grid;
+    place-items: center;
+    gap: 3rem;
+    min-height: 90vh;
+}
+
+main article {
+    width: 100%;
+}
+
+h1, h2, h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1 {
+    font-size: clamp(1.8rem, 1.8rem + 1.5vmax, 3.5rem);
+    text-align: center;
+}
+h2, .h2 {
+    font-size: clamp(1.45rem, 1.45rem + .25vmax, 4rem);
+}
+h3, .h3 {
+    font-size: clamp(1.1rem, 1.1rem + .15vmax , 2.5rem);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+ul,ol {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.underline-animation {
+    position: relative;
+    padding: 2px 0;
+}
+
+.underline-animation::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    transform: scaleX(0);
+    transform-origin: right;
+    background-color: currentColor;
+    transition: transform .3s ease-in-out;
+}
+
+.underline-animation:is(:hover, :focus-within)::after, 
+[aria-current="page"]::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}

@@ -1,0 +1,58 @@
+footer {
+    display: grid;
+    padding: 5vh 10vw;
+    background: var(--secondary-color);
+    box-shadow: 1px 0 10px var(--shadow-color);
+    border-top: 1px solid var(--shadow-color);
+    color: var(--secondary-contrast-color);
+    gap: 3.5rem;
+}
+
+footer > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+footer > div:last-child {
+    display: grid;
+    place-items: center;
+    grid-row-gap: 0.1rem;
+    row-gap: 0.1rem;
+    font-size: .7rem;
+    line-height: 1.25;
+}
+
+footer strong{
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-bottom: 0.7rem;
+}
+footer strong::first-letter {
+    text-transform: uppercase;
+}
+footer > div:first-child ul {
+    line-height: 1.75;
+}
+footer > div:first-child a {
+    opacity: .7;
+    font-weight: 700;
+    transition: opacity .3s ease-in-out;
+}
+footer > div:first-child a:is(:hover, :focus-within) {
+    opacity: 1;
+}
+footer > div:first-child .socials{
+    display: flex;
+    gap: 1rem;
+}
+footer > div:first-child .socials svg{
+    margin-top: 5px;
+    height: 3rem;
+    border: 1px solid currentColor;
+    border-radius: 50%;
+    fill: currentColor;
+    padding: 1px;
+    transition: transform .3s;
+}

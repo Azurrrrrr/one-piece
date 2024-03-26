@@ -1,0 +1,8 @@
+RewriteEngine On
+
+RewriteBase /site/clement_guillore
+RewriteRule \.(webp|jpg|jpeg|png|gif|css|js)$ - [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [L]

@@ -1,0 +1,3 @@
+<title>Mentions Légales | ONE PIECE</title>
+<meta name="description" content="Consultez les mentions légales de ce site édité par Clément GUILLORÉ. Retrouvez des informations sur l'éditeur, le directeur de la publication, l'hébergement, la propriété intellectuelle, la collecte des données personnelles, l'utilisation des cookies, les liens externes, et la juridiction applicable. Contactez Clément GUILLORÉ pour plus d'informations.">
+<meta name="keywords" content="One Piece, Mentions Légales, Clément GUILLORÉ, Éditeur, Directeur de la publication, Hébergement, Propriété intellectuelle, Données personnelles, Cookies, Liens externes, Juridiction applicable">

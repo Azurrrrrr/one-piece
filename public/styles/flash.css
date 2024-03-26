@@ -1,0 +1,11 @@
+.logged-info {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+    padding-top: var(--header-height);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}

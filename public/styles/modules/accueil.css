@@ -1,0 +1,73 @@
+
+
+.slider {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    max-width: 1300px;
+}
+
+.slider .buttons {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.slider .buttons button {
+    font-size: 2rem;
+    color: var(--primary-contrast-color);
+    filter: brightness(.7);
+    padding: .5rem;
+    transition: filter .3s;
+}
+.slider .buttons button:is(:hover, :focus-within) {
+    filter: brightness(1);
+}
+
+.slider .slides {
+    position: relative;
+    inset: 0;
+    margin: 0 2rem;
+    height: max(65vh, 37.5rem);
+}
+.slider article.currentSlide {
+    opacity: 1;
+    visibility: visible;
+
+}
+.slider article {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s;
+}
+.slider article img {
+    filter: brightness(.65);
+    height: 100%;
+    width: auto;
+    border: 1px solid transparent;
+    box-shadow: 0 0 250px 100px var(--shadow-color);
+    transition: filter .3s ease-in-out, border-color .3s ease-in-out;
+}
+.slider article.currentSlide a:is(:hover, :focus-within) img{
+    filter: brightness(.85);
+    border-color: var(--secondary-color);
+}
+.slider article h3 {
+    position: absolute;
+    top:50%;
+    left:50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+}
+
+.slider article h3::first-letter {
+    text-transform: uppercase;
+}
+

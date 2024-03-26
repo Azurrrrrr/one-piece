@@ -1,0 +1,4 @@
+<title>Equipage | ONE PIECE</title>
+<meta name="description" content="Découvrez l'équipage des Mugiwara dans One Piece, mené par Monkey D. Luffy. Explorez les profils captivants de membres tels que Roronoa Zoro, Nami, Usopp, Sanji, Tony Tony Chopper, Nico Robin, Franky, Brook, Jinbe, et les emblématiques navires Vogue Merry et Thousand Sunny. Plongez dans l'aventure, la camaraderie et les talents uniques de chaque membre qui font de cet équipage l'un des plus emblématiques de l'univers manga.">
+<meta name="keywords" content="One Piece, équipage, Mugiwara, Monkey D. Luffy, Roronoa Zoro, Nami, Usopp, Sanji, Tony Tony Chopper, Nico Robin, Franky, Brook, Jinbe, Vogue Merry, Thousand Sunny">
+<link rel="stylesheet" href="./public/styles/modules/equipage.css">

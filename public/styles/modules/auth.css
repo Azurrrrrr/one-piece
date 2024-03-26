@@ -1,0 +1,122 @@
+main{
+    display: grid;
+    place-items: center;
+    padding: var(--basic-padding);
+    min-height: 80vh;
+}
+form{
+    display: grid;
+    row-gap: 1.5vh;
+    width: clamp(280px, 50vw, 550px);
+    padding: 1rem 2rem;
+    border-radius: 1vmax;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    border: 10px solid rgb(5, 5, 5, 0.7);
+    box-shadow: -2px 1.25px 2px 2px rgb(5, 5, 5, 0.7),
+    0px 0px 25px 1px var(--second-bg-color);
+}
+
+
+label{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 2vh;
+    height: 4.5vh;
+    padding: 1vh 0;
+    border-bottom: solid 1px var(--primary-color);
+}
+input{
+    outline: none;
+    color: var(--principal-color);
+    width: 100%;
+    padding: 0.2vh 0.25vw;
+    height: 100%;
+    margin: 0 auto;
+    background: transparent;
+    border: 0;
+}
+label > span{
+    color: var(--primary-color);
+    position: absolute;
+    cursor: text;
+    transition: all .4s ease-out;
+}
+
+label:focus-within span, .go-up{
+    transform: translateY(-3vh);
+}
+
+
+label > svg {
+    fill: currentColor;
+    cursor: pointer;
+    height: 100%;
+}
+label > svg > line {
+    stroke: currentColor;
+    stroke-width: 110;
+}
+.password > line {
+    stroke: transparent;
+}
+
+form > button{ /* mes 4 menus : Futurs concours, Ouverts à la participation, Ouverts aux votes, Concours terminés*/
+    background: var(--low-opacity-color); 
+    color: var(--buttons-basic-color);
+    padding: 1vh 3vw;
+    margin: 1vh auto;
+    border-radius: 100vmax; 
+    font-weight: 700; 
+    box-shadow: -2px 1px 2px 2px var(--low-opacity-color);
+    position: relative;        /* pour placer mon ::after parfaitement*/
+    z-index: 1;                 /* place le texte devant le ::after quand l'aimantion est active */
+    overflow: hidden;                   /* pour eviter que le ::after dépasse de la balise a*/
+    transition: color .15s linear;
+}
+
+form > button::after{     /*creation d'un ::after pour une animation*/
+    content: "";    
+    position: absolute;  /* placement de mon ::after parfaitement avec top et left*/
+    left: 0;
+    top: 0;
+    height: 100%;       /* hauteur de 100% pour remplir totalement la balise a lors de l'animation*/
+    width: 0;               /* initialise la width à 0 pour faire ensuite l'animation grâce à celle-ci*/
+    background-color: var(--special-color);     /* couleur du fond de l'animation */
+    z-index: -1;                        /* pour que le ::after passe derrière lors de l'animation */
+    transition: width .3s ease-out;             /* transition de l'animation */
+}
+form > button:hover,     
+form > button:focus{          
+    color: var( --principal-color);
+}
+form > button:hover::after,   /* lors du survole de la souris, active l'animation du ::after */
+form > button:focus:after {      /* ou lors du focus clavier */
+    width: 100%;             /* la width du ::after devien la même que la width de la balise a  */
+}
+
+form > a:first-of-type { /* lien mdp oublié */
+    justify-self: end;
+    font-size: 0.8rem;
+    opacity: 0.7;
+    transition: opacity 0.25s ease-out;
+}
+form > a:first-of-type:hover {
+    opacity: 1;
+}
+
+form > a:last-of-type { /* lien créer un compte */
+    justify-self: center;
+    font-size: 0.9rem;
+    text-decoration: underline;
+}
+
+small{
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.error {
+    color: red;
+}

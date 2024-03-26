@@ -1,0 +1,4 @@
+<title>Primes | ONE PIECE</title>
+<meta name="description" content="Découvrez les différentes primes des personnages de One Piece, dont Luffy, Zoro, Jinbe, Sanji, Robin, Nami, Franky, Brook, Chopper, God Usopp, Buggy, Gol D. Roger, Barbe Noire, Big Mom, Kaido, Shanks, Trafalgar Law, Captain Kid, Doflamingo, Corazon, Mihawk, Crocodile, Katakuri, et bien d'autres. Consultez les primes mises à jour et les informations sur les personnages.">
+<meta name="keywords" content="One Piece, Primes, Luffy, Zoro, Jinbe, Sanji, Robin, Nami, Franky, Brook, Chopper, God Usopp, Buggy, Gol D. Roger, Barbe Noire, Big Mom, Kaido, Shanks, Trafalgar Law, Captain Kid, Doflamingo, Corazon, Mihawk, Crocodile, Katakuri, personnages, pirates, primes One Piece">
+<link rel="stylesheet" href="./public/styles/modules/primes.css">

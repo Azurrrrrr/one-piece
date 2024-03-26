@@ -1,0 +1,4 @@
+<title>Arcs | ONE PIECE</title>
+<meta name="description" content="Explorez les différents arcs de One Piece sur cette page. Découvrez la répartition des arcs, des épisodes 1 à 1086 et au-delà. Retrouvez des informations détaillées sur les sagas East Blue, Alabasta, Île céleste, Water Seven, Thriller Bark, Guerre au Sommet, Île des Hommes-Poissons, Dressrosa, Île Tougato, Pays des Wa et la saga finale.">
+<meta name="keywords" content="One Piece, Arcs, East Blue, Alabasta, Île céleste, Water Seven, Thriller Bark, Guerre au Sommet, Île des Hommes-Poissons, Dressrosa, Île Tougato, Pays des Wa, Saga finale, Anime, Manga">
+<link rel="stylesheet" href="./public/styles/modules/arcs.css">
